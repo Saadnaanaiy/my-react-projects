@@ -1,0 +1,106 @@
+@media print {
+  nav,
+  label,
+  select,
+  button,
+  .btn,
+  .form-select {
+    display: none;
+  }
+}
+
+.anime {
+  animation: fade 1.5s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully hidden */
+  }
+}
+
+section {
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 43px;
+}
+/* Facture.css */
+.popup-list {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 8px 78px rgba(0, 0, 0, 0.404);
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.popup-list h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+strong {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  transition: 0.8s all ease-in;
+  transform: scale(1);
+}
+
+strong:hover {
+  transition: 0.7s all ease;
+  background-color: rgb(176, 222, 251);
+  transform: scale(1.10);
+}
+
+.popup-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.popup-list li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.popup-list li:last-child {
+  border-bottom: none;
+}
+
+.popup-list .btn-danger {
+  margin-top: 10px;
+}
+
+.popup-list .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
